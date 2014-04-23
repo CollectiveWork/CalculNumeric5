@@ -1,20 +1,15 @@
 package calculnumeric5;
 
 import java.net.URL;
-import java.util.List;
 import java.util.ResourceBundle;
-import javafx.css.CssMetaData;
-import javafx.css.Styleable;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.Scene;
 import javafx.scene.chart.AreaChart;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
 import javafx.scene.layout.AnchorPane;
 
 /**
