@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="806.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication1.FXMLDocumentController">
+  <children>
+    <AnchorPane prefHeight="369.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <TabPane prefHeight="369.0" prefWidth="598.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <tabs>
+            <Tab text="Integral">
+              <content>
+                <AnchorPane id="Content" fx:id="integral_tab" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                    <SplitPane dividerPositions="0.6206467661691543" focusTraversable="true" prefHeight="338.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      <items>
+                        <AnchorPane fx:id="integral_chart_anchor_pane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                          <children>
+                            <AreaChart id="AreaChart" fx:id="integral_chart" prefHeight="336.0" prefWidth="392.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <xAxis>
+                                <CategoryAxis side="BOTTOM" />
+                              </xAxis>
+                              <yAxis>
+                                <NumberAxis side="LEFT" />
+                              </yAxis>
+                            </AreaChart>
+                          </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                          <children>
+                            <SplitPane dividerPositions="0.576068376068376" focusTraversable="true" orientation="VERTICAL" prefHeight="336.0" prefWidth="275.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <items>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                  <children>
+                                    <FlowPane prefHeight="334.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <children>
+                                        <ToggleButton mnemonicParsing="false" text="ToggleButton" />
+                                        <ToggleButton mnemonicParsing="false" text="ToggleButton" />
+                                        <ToggleButton mnemonicParsing="false" text="ToggleButton" />
+                                        <ToggleButton mnemonicParsing="false" text="ToggleButton" />
+                                        <ToggleButton mnemonicParsing="false" text="ToggleButton" />
+                                        <ToggleButton mnemonicParsing="false" text="ToggleButton" />
+                                      </children>
+                                    </FlowPane>
+                                  </children>
+                                </AnchorPane>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                  <children>
+                                    <Button fx:id="test_button" layoutX="70.0" layoutY="50.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Button" />
+                                  </children>
+                                </AnchorPane>
+                              </items>
+                            </SplitPane>
+                          </children>
+                        </AnchorPane>
+                      </items>
+                    </SplitPane>
+                  </children>
+                </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Cauchy">
+              <content>
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+          </tabs>
+        </TabPane>
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>
